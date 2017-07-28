@@ -1,0 +1,51 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+	if a bug is introduced in a new version, diff will find the difference between the right version and the wrong one and will show the line where the bug appears. When you don't know what typo you have made it is almost impossible otherwise to find it.
+
+
+
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    It is easier to test new functions and go back if they are not working as expected
+    It is easier to debug by identifying exactly what version change started showing the buggy behaviour
+
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+	Manual commits let you choose the right granularity and it is the only way to make sure that the update is semantically meaningful.
+	At the same time, automatic saving prevents from losing information in case of a crash. For sw versions, manual commits are the only way to keep updates semantically meaningful.
+
+
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+	Git is specifically targetted to sw version control while others are generic file storage systems with version controls. In sw, many files can be related so that a feature change has impact on more than one file at the same time.
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+	git log tracks the history of all commits in the history of a repository. Every commit is identified with an id and contains a description of the changes.
+	To get the details of a change, you can use git diff to compare the two commits and you will get the detail of all lines added or deleted
+
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+	It is very easy to track which change broke something, correct it if possible or revert to the version before something was wrong
+	
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
