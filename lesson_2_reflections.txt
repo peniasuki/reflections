@@ -10,7 +10,9 @@ What value do you think it offers?
 	The staging area is what git takes care of, while in the working directory you can have any other file but they are not kept track of
 	It allows you to have content in the working area you don't need to track as it is not changing and it reduces the burden of git as making it take care only of the files that require version control
 
-
+	git diff (no arguments) compares working directory with staging area
+	git diff --staged compares staging area with latest commit
+	git diff commit 1 commit2 compares two commits
 
 How can you use the staging area to make sure you have one commit per logical
 change?
